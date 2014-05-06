@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <style>
+         @page {
+         size: A4 portrait;
+         margin: 1cm;
+         }
+         .page {
+         page-break-after: always;
+         font: 11pt 'futura', helvetica, arial, sans-serif;
+         color: #157dc1;
+         }
+         div.header {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         background: url(img/1/print_header.jpg) no-repeat center top;
+         background-size: contain;
+         z-index: -1;
+         }
+         div.footer {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         bottom: 0;
+         background: url(img/1/print_footer.jpg) no-repeat center bottom;
+         background-size: contain;
+         z-index: -1;
+         }
+         .container {
+         padding: 200px 50px;
+         padding-bottom: 0;
+         }
+         .container p {
+         line-height: 1.2;
+         margin: 0;
+         margin-bottom: 5px;
+         }
+         .container p.no-margin {
+         margin: 0;
+         }
+         .container p span {
+         color: #000;
+         border-bottom: 1px solid #157dc1;
+         padding: 5px;
+         font-family: 'waitingforthesunrise', cursive;
+         }
+         p.big {
+         font-size: 14pt;
+         font-weight: bold;
+         }
+         h2 {
+         margin: 0 10px 10px;
+         }
+         .rosa {
+         color: #f5979d;
+         }
+         .center {
+         text-align: center;
+         }
+         .page-title {
+         margin-bottom: 10px;
+         line-height: 1.4;
+         width: 100%;
+         height: 105px;
+         color: #000;
+         background: url(img/1/titulo_back.png) no-repeat center;
+         text-transform: uppercase;
+         }
+         .page-title p {
+         margin: 0;
+         }
+         .page-title p:first-child {
+         padding-top: 20px;
+         }
+         .title, .sub-title {
+         text-align: center;
+         margin: 0;        
+         font-family: 'futura', sans-serif;
+         }
+         .title {
+         font-size: 25px;
+         margin-top: 15px;
+         margin-bottom: 0;
+         }
+         .sub-title {
+         line-height: 1;
+         }
+         .marco {
+         background-color: darkblue;
+         padding: 30px;
+         }
+         #marco1 {
+         width: 300px;
+         margin: 0 auto;
+         }
+         #marco2, #marco8, #marco9 {
+         width: 220px;
+         }
+         #marco3, #marco4 {
+         width: 180px;
+         }
+         #marco5, #marco6, #marco7, #marco10, #marco11 {
+         width: 160px;
+         margin: 5px auto;
+         }
+         #marco7 {
+         margin: 0 auto;
+         }
+         #marco12 {
+         width: 160px;
+         margin: 5px auto 20px;
+         }
+         #marco13 {
+         margin: 5px auto;
+         }
+         #marco14, #marco15, .custom-page .marco {
+         margin: 20px auto;
+         width: 220px;
+         }
+         .antojos {
+         margin-top: 10px;
+         }
+         .antojos p {
+         line-height: 1;
+         margin: 0;
+         }
+         #six .row {
+         margin-top: 20px;
+         }
+         #seven .row {
+         margin-bottom: 15px;
+         }
+         #nine .row,
+         #fifteen .row {
+         margin-top: 20px;
+         margin-bottom: 20px;
+         }
+         #ten .row {
+         background-image: url(img/1/bebesotes.png);
+         background-position: center top;
+         background-repeat: no-repeat;
+         }
+         #ten .row  p:first-child {
+         margin-top: 200px;
+         }
+         #ten .row  {
+         height: 350px;
+         }
+         #sixteen .row {
+         margin: 20px 0;
+         }
+         #seventeen input {
+         display: inline;
+         }
+         #seventeen label {
+         margin-left: 10px;
+         }
+         #seventeen .big {
+         margin-top: 10px;
+         }
+         #nineteen .row {
+         background: url(img/1/epilogo_s.png) center top no-repeat;
+         padding: 150px 120px 0; 
+         height: 340px;
+         }
+         #twenty .row,
+         .custom-page .row{
+         padding-left: 80px;
+         padding-right: 80px;
+         }
+         .arbol {
+         width: 620px;
+         height: 500px;
+         background: url(img/1/arbol.png) center 60px no-repeat;
+         }
+         .arbol .row span {
+         display: inline-block;
+         width: 100px;
+         border-radius: 55px;
+         margin: 0px;
+         height: 100px;
+         padding: 10px;
+         background: darkblue;
+         }
+         .arbol .row img {
+         width: 100px;
+         border-radius: 50px;
+         height: 100px;
+         }
+         #f1 {
+         margin-left: 0px;
+         }
+         #f2 {
+         margin-left: 32px;
+         }
+         #f3 {
+         margin-left: 60px;
+         }
+         #f4 {
+         margin-left: 30px;
+         }
+         .arbol .row.second {
+         margin: 60px 160px;
+         }
+         #f6 {
+         margin-left: 58px;
+         }
+         #f7 {
+         margin: 0 auto;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="one" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="marco" id="marco1">
+               <img width="100%" src="test/CoverPhoto_100001458999435.png">
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="two" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">¡FELICIDADES!</p>
+               <p class="sub-title">LA PRUEBA ES POSITIVA</p>
+            </div>
+            <p>Sospeché que estaba embarazada cuando: <span>ghjj</span></p>
+            <p>Me hice una prueba de embarazo el día: <span>16 marzo 2014</span></p>
+            <p>Lo primero que sentí fue: <span>jhds jgshkdj fdsgf kdjf sd. ! !° 1jh sdfkg</span>
+            <p>Tenía <span>3</span> semanas de embarazo cuando me enteré que venía el bebé en camino, ahh que emoción!. Compartí la gran noticia con el papá de mi bebé de esta manera: <span>d njsfg sdgf jhdg fdshjg fdsjmf</span>
+            <p>Éste es mi bebé número: <span>1</span></p>
+            <p>Los hermanitos del bebé reaccionaron así: <span>d fhjysjhdfgsjh</span></p>
+            <p class="nota rosa center">¡Anota todos los detalles antes de que se te olviden!... ¿Cómo y dónde celebraste saber que estabas embarazada? ¿Con quién compartiste el momento? ¿Cómo reaccionaron tus familiares? ¿Cuál fue la primera compra que hiciste o regalo que te dieron para el bebé?</p>
+            <p><span>gf gfgh f gf</span></p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="three" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">MI PRIMER VISITA</p>
+               <p class="sub-title">AL GINECÓLOGO</p>
+            </div>
+            <p>Mi ginecólogo es: <span>respuestajkahkjsad asdkasnkjdas</span></p>
+            <p>Fecha estimada en que nacerás:<span></span></p>
+            <p>Mi peso actual:<span>kg</span></p>
+            <p>Las medidas de mi pancita:<span></span></p>
+            <p>Lo que recuerdo de mi primera visita es:<span></span></p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="four" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">YO SOY...</p>
+               <p class="sub-title"></p>
+            </div>
+            <div style="display:inline-block; width: 300px;">
+               <div class="marco" id="marco2">
+                  <img width="100%" src="test/whoami_100001458999435.png">
+               </div>
+            </div>
+            <div style="display:inline-block; width: 330px;">
+               <p>Yo soy: <span>iiiiiii i ii iii i ii i ii iIIIIIIIIIIIIII</span></p>
+               <p>Tengo <span>28</span> años</p>
+               <p>Me dedico a: <span>hajd sgfa sdg</span></p>
+               <p>Vivo en: <span>Easdada, Lsaassss</span></p>
+               <p>Y el papá: <span>Esdfasdf Uadsf</span></p>
+               <p class="no-margin">El día de mañana quiero recordar que yo:</p>
+               <p class="no-margin"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span></p>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="five" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">PRIMEROS</p>
+               <p class="sub-title">SÍNTOMAS Y MALESTARES</p>
+            </div>
+            <p class="big center">Cariño me puedes detener el cabello SOS... no me siento tan bien!</p>
+            <p>Ouch, empiezan los malestares matutinos y yo me siento: <span>As najsbda nma sdaas</span></p>
+            <p>Pero cuando me siento peor es: <span>Ajshb syyasy aysgdas gd adty cb</span></p>
+            <div style="display:inline-block; width: 300px">
+               <div class="antojos">
+                  <div style="display:inline-block; width: 100px">
+                     <p>Antojos</p>
+                  </div>
+                  <div style="display:inline-block; width: 200px">
+                     <p><span>Antojito</span></p>
+                     <p><span>Antojito</span></p>
+                     <p><span>Antojito</span></p>
+                     <p><span>Antojito</span></p>
+                     <p><span>Antojito</span></p>
+                     <p><span>Antojito</span></p>
+                  </div>
+                  <div class="antojos">
+                     <div style="display:inline-block; width: 100px">
+                        <p>Ascos</p>
+                     </div>
+                     <div style="display:inline-block; width: 200px">
+                        <p><span>Antojito</span></p>
+                        <p><span>Antojito</span></p>
+                        <p><span>Antojito</span></p>
+                        <p><span>Antojito</span></p>
+                        <p><span>Antojito</span></p>
+                        <p><span>Antojito</span></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div style="display:inline-block; width: 330px">
+               <p>Mmmm! cuando se trata de antojos</p>
+               <p class="no-margin">El antojito más raro que he tenido es:</p>
+               <p class="no-margin"><span>Lorem ipsum dolor sit amet, consectetuer adiLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.piscing elit. Aenean commodo ligula eget dolor.</span></p>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="six" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">SÚPER COOL</p>
+               <p class="sub-title">FOTOS DEL ULTRASONIDO</p>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 250px;">
+                  <div class="marco" id="marco3">
+                     <img width="100%" src="test/ultrasound_1_2_100001458999435.png">
+                  </div>
+               </div>
+               <div style="display:inline-block; width: 330px;">
+                  <h2>PRIMER ULTRASONIDO</h2>
+                  <p>Fuí el: <span>2014-04-18</span></p>
+                  <p>Tenía <span>3</span> semanas de embarazo</p>
+                  <p><span></span></p>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 250px;">
+                  <div class="marco" id="marco4">
+                     <img width="100%" src="test/ultrasound_1_1_100001458999435.png">
+                  </div>
+               </div>
+               <div style="display:inline-block; width: 330px;">
+                  <h2>SEGUNDO ULTRASONIDO</h2>
+                  <p>Fuí el: <span>2014-04-18</span></p>
+                  <p>Tenía <span>3</span> semanas de embarazo</p>
+                  <p><span></span></p>
+               </div>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="seven" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">MI PANCITA</p>
+               <p class="sub-title">MES A MES</p>
+            </div>
+            <div class="row">
+               <div class="center" style="display:inline-block; width: 300px;">
+                  <div class="marco" id="marco5">         
+                     <img width="100%" src="test/bellypages_1_100001458999435.jpg">
+                  </div>
+                  <p>Mes 1</p>
+               </div>
+               <div class="center" style="display:inline-block; width: 300px;">
+                  <div class="marco" id="marco6">                   
+                     <img width="100%" src="test/bellypages_2_100001458999435.jpg">
+                  </div>
+                  <p>Mes 3</p>
+               </div>
+            </div>
+            <div class="center">
+               <div class="marco" id="marco7">                   
+                  <img width="100%" src="test/bellypages_3_100001458999435.jpg">
+               </div>
+               <p>Mes 3</p>
+            </div>
+            <p><span></span></p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="eight" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">MI ÁNIMO</p>
+               <p class="sub-title">MES A MES</p>
+            </div>
+            <div class="row">
+               <div class="center" style="display:inline-block; width: 260px;">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <h2>MES 1</h2>
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <h2>MES 2</h2>
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <h2>MES 3</h2>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 260px; color: #000">
+                  Mi humor es:
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 260px;">
+                  Feliz y sonriente        
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month1_humor]" value="1" checked="checked">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month2_humor]" value="1">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month3_humor]" value="1">
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 260px;">
+                  Huracán Hormonal
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month1_humor]" value="2">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month2_humor]" value="2" checked="checked">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month3_humor]" value="2">
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 260px;">
+                  Mitad soleado - Mitad lluvioso
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month1_humor]" value="3">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month2_humor]" value="3">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month3_humor]" value="3" checked="checked">
+               </div>
+            </div>
+            <br>
+            <div class="row">
+               <div style="display:inline-block; width: 260px; color: #000">
+                  Mi nivel de energía es:
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 260px;">
+                  Relativamente normal
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month1_energy]" value="1" checked="checked">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month2_energy]" value="1">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month3_energy]" value="1" checked="checked">
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 260px;">
+                  Con un poco de sueño
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month1_energy]" value="2">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month2_humor]" value="2" checked="checked">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month3_humor]" value="2">
+               </div>
+            </div>
+            <br>
+            <div class="row">
+               <div style="display:inline-block; width: 260px; color: #000">
+                  El cambio físico que más he percibido:
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 260px;">
+                  Mis pantalones aún me quedan
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month1_physical]" value="1" checked="checked">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month2_physical]" value="1">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month3_physical]" value="1">
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 260px;">
+                  ¡Ups! medio me aprietan
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month1_physical]" value="2">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month2_physical]" value="2" checked="checked">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month3_physical]" value="2">
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 260px;">
+                  ¡Auxilio! Traigan el costal de papas
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month1_physical]" value="3">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month2_physical]" value="3" checked="checked">
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <input type="radio" name="data[AnimoPage][month3_physical]" value="3">
+               </div>
+            </div>
+            <br>
+            <div class="row">
+               <div style="display:inline-block; width: 260px;">
+                  Otro
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <span>Casssa</span>
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <span>Casssa</span>
+               </div>
+               <div class="center" style="display:inline-block; width: 110px;">
+                  <span>Casssa</span>
+               </div>
+            </div>
+            <p><span></span></p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="nine" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">AMO A MI BEBÉ</p>
+               <p class="sub-title"></p>
+            </div>
+            <p>Hoy <span>09 mayo 2014</span> nunca lo olvidaré porque oí tu corazón por primera vez</p>
+            <p>Tac, tac, sonaba como:</p>
+            <div class="row">
+               <div class="center" style="display:inline-block; width: 200px;">
+                  <p>Caballos Galopantes</p>
+                  <input type="radio" name="data[IlovemybabyPage][heartbeat]" value="1">
+                  <div><img src="img/1/caballo.png"></div>
+               </div>
+               <div class="center" style="display:inline-block; width: 200px;">
+                  <p>Como un tambor</p>
+                  <input type="radio" name="data[IlovemybabyPage][heartbeat]" value="2" checked="checked">
+                  <div><img src="img/1/tambor.png"></div>
+               </div>
+               <div class="center" style="display:inline-block; width: 200px;">
+                  <p>Un mar de emociones</p>
+                  <input type="radio" name="data[IlovemybabyPage][heartbeat]" value="3">
+                  <div><img src="img/1/mar.png"></div>
+               </div>
+            </div>
+            <p>y lo primero que sentí fue: <span>sdfdj,snhfkjdshf jksdh fdjsh fjdshf dkjshfjdskhf jkdshf kjdhf jsdhf sjdhf jdshfjdskhfjkdshf jkdshfjkd shjfdsk fsjdhf jdskhf djskhf dsjkhfsdjkf hsjdkhdskj fhdjskf hdjskh fjdksh fdjskhfdjs kfh dsjkfhsdj</span></p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="ten" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">¿NIÑO O NIÑA?</p>
+               <p class="sub-title"></p>
+            </div>
+            <div class="row center">
+               <p>Todo el mundo piensa que mi bebé será:</p>
+               <p>Niña</p>
+               <p>Yo personalmente pienso que eres:</p>
+               <p>Gemelos</p>
+            </div>
+            <p>Decidimos <span>No saber</span>, porque <span>nonkjhh jkhkj jh jkh</span></p>
+            <p>Tu papá y yo te llamamos de cariño <span>popopopop</span> ahora que estás dentro de mi pancita.</p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="eleven" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">¡LAS PRIMERAS!</p>
+               <p class="sub-title">PATADITAS...</p>
+            </div>
+            <p>Hay una sensación muy difícil de describir, y es cuando sentí a mi bebé revoloteando en mi pancita...</p>
+            <p>Esta maravilla de la vida la sentí el <span>15 mayo 2014</span></p>
+            <p>Ay, la semana en que empezó a patear duro el bebé fue: <span>fsdfdsfds</span></p>
+            <br>
+            <div class="row">
+               <div class="center"style="display:inline-block; width: 300px;">
+                  <div class="marco" id="marco8">
+                     <img width="100%" src="test/firstkick_100001458999435_4.jpg">
+                  </div>
+                  <p><span>06 marzo 2014</span></p>
+               </div>
+               <div style="display:inline-block; width: 300px;">
+                  <p>Ahora qué eres más fotogénico, claramente pude ver: <span>sdfaj shajsd fhhj</span></p>
+                  <p>La GRAN pregunta: ¿el bebé es?</p>
+                  <p>Todavía no se ve nada!</p>
+                  <p>Yo me siento: <span>Aasdfn sh ajsdn bas asda</span></p>
+                  <div>
+                     <div style="display:inline-block; width: 120px;">
+                        <p>Antojos:</p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                     </div>
+                     <div style="display:inline-block; width: 120px;">
+                        <p>Ascos:</p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                        <p class="no-margin"><span>Antojo</span></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <p><span></span></p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="twelve" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">MI PANCITA</p>
+               <p class="sub-title">MES A MES</p>
+            </div>
+            <div class="row">
+               <div class="center"style="display:inline-block; width: 300px;">
+                  <div class="marco" id="marco9">
+                     <img width="100%" src="test/bellymonths_100001458999435_3.gif">
+                  </div>
+                  <p><span>06 marzo 2014</span></p>
+               </div>
+               <div style="display:inline-block; width: 300px;">
+                  <p>Mi peso actual: <span>200 kilos</span></p>
+                  <p>Las medidas de mi pancita <span>sdajkshdf sdh</span></p>
+                  <p>Totalmente justificables considerando como me duele la espalda.</p>
+                  <p>Huy, mi apetito es del tamaño de un:</p>
+                  <p class="center"><span>Léon</span></p>
+                  <p>Las cosas que más extraño de mi vida antes de estar embarazada son:</p>
+                  <p class="center"><span>Mi vejiga de su tamaño normal</span></p>
+               </div>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="thirteen" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">SE ACERCA</p>
+               <p class="sub-title">EL GRAN MOMENTO</p>
+            </div>
+            <p class="big center">Estoy tomando un curso de preparación para el parto, ¡ay que miedo!</p>
+            <p>Querido bebé, perdónanos pero te hemos llamado: <span>carlos solares</span></p>
+            <br>
+            <div class="row">
+               <div style="display:inline-block; width: 300px;">
+                  <p class="center">Nombres reales qué estamos considerando:</p>
+               </div>
+               <div style="display:inline-block; width: 100px;">
+                  <p class="center">Mi favorito:</p>
+               </div>
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center">Sugerencias de otras personas:</p>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 300px;">
+                  <p class="center"><span>Nombres reales qué estamos considerando</span></p>
+               </div>
+               <div style="display:inline-block; width: 100px;">
+                  <p class="center"><input type="radio" name="data[GettingclosePage][favoritename]" value="1" checked="checked"></p>
+               </div>
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center"><span>Sugerencias de otras personas</span></p>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 300px;">
+                  <p class="center"><span>Nombres reales qué estamos considerando</span></p>
+               </div>
+               <div style="display:inline-block; width: 100px;">
+                  <p class="center"><input type="radio" name="data[GettingclosePage][favoritename]" value="2"></p>
+               </div>
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center"><span>Sugerencias de otras personas</span></p>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 300px;">
+                  <p class="center"><span>Nombres reales qué estamos considerando</span></p>
+               </div>
+               <div style="display:inline-block; width: 100px;">
+                  <p class="center"><input type="radio" name="data[GettingclosePage][favoritename]" value="3"></p>
+               </div>
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center"><span>Sugerencias de otras personas</span></p>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 300px;">
+                  <p class="center"><span>Nombres reales qué estamos considerando</span></p>
+               </div>
+               <div style="display:inline-block; width: 100px;">
+                  <p class="center"><input type="radio" name="data[GettingclosePage][favoritename]" value="4"></p>
+               </div>
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center"><span>Sugerencias de otras personas</span></p>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 300px;">
+                  <p class="center"><span>Nombres reales qué estamos considerando</span></p>
+               </div>
+               <div style="display:inline-block; width: 100px;">
+                  <p class="center"><input type="radio" name="data[GettingclosePage][favoritename]" value="5"></p>
+               </div>
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center"><span>Sugerencias de otras personas</span></p>
+               </div>
+            </div>
+            <br>
+            <p>Mis suegros insisten que te llames: <span>Sakajf</span></p>
+            <p>Mis papás opinan: <span>Sasn asdkja s a k</span></p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">BABY SHOWER</p>
+               <p class="sub-title"></p>
+            </div>
+            <p>Mi baby shower fué: <span>25 mayo 2011</span></p>
+            <br>
+            <div class="row">
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center">Los regalos que recibí:</p>
+               </div>
+               <div style="display:inline-block; width: 130px;">
+                  <p class="center">El más divertido fue:</p>
+               </div>
+               <div style="display:inline-block; width: 270px;">
+                  <p class="center">Vinieron a conocerte dentro de mi panza:</p>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center"><span>Nombres reales</span></p>
+               </div>
+               <div style="display:inline-block; width: 130px;">
+                  <p class="center"><input type="radio" name="data[GettingclosePage][favoritename]" value="1" checked="checked"></p>
+               </div>
+               <div style="display:inline-block; width: 270px;">
+                  <p class="center"><span>Sugerencias de otras personas</span></p>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center"><span>estamos considerando</span></p>
+               </div>
+               <div style="display:inline-block; width: 130px;">
+                  <p class="center"><input type="radio" name="data[GettingclosePage][favoritename]" value="2"></p>
+               </div>
+               <div style="display:inline-block; width: 270px;">
+                  <p class="center"><span>Otras personas</span></p>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 200px;">
+                  <p class="center"><span>Nombres </span></p>
+               </div>
+               <div style="display:inline-block; width: 130px;">
+                  <p class="center"><input type="radio" name="data[GettingclosePage][favoritename]" value="3"></p>
+               </div>
+               <div style="display:inline-block; width: 270px;">
+                  <p class="center"><span>Sugerencias</span></p>
+               </div>
+            </div>
+            <br>
+            <div class="row">
+               <div class="center" style="display:inline-block; width: 300px;">
+                  <div class="marco" id="marco10">         
+                     <img width="100%" src="test/bbyshower_2_100001458999435.png">
+                  </div>
+               </div>
+               <div class="center" style="display:inline-block; width: 300px;">
+                  <div class="marco" id="marco11">                   
+                     <img width="100%" src="test/bbyshower_1_100001458999435.png">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="fourteen" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">SÚPER COOL</p>
+               <p class="sub-title">FOTOS DEL ULTRASONIDO</p>
+            </div>
+            <div style="display:inline-block; width: 300px;">
+               <div class="marco" id="marco12">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>
+               </div>
+               <p>En este trimestre tu papá está un poco: <span>Sobreprotectors</span></p>
+               <p>Las cosas que más extraño: <span>Usar noseque y asi.</span></p>
+               <p>La gente que opina de mi panza: <span>Corresponde a los meses que tengo de embarazo</span></p>
+            </div>
+            <div style="display:inline-block; width: 300px;">
+               <h2>Ultrasonido</h2>
+               <p>Tenía <span>16</span> semanas de embarazo</p>
+               <p>Lo que me dijo el doctor fue: <span>sad jsda ohs </span></p>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="fifteen" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">SÍNTOMAS</p>
+               <p class="sub-title">DE ANIDAR</p>
+            </div>
+            <p class="big center">¡Muchas emociones! Me estoy preparando para tu llegada.</p>
+            <p class="big center">Oficialmente estoy anidando.</p>
+            <p>Me ha dado por: <span>Limpiar toda la casa</span></p>
+            <div class="row">
+               <div style="display:inline-block; width: 300px;">
+                  <p>Nos falta comprar:</p>
+                  <p><span>ASasdf</span></p>
+                  <p><span>ASasdf</span></p>
+                  <p><span>ASasdf</span></p>
+               </div>
+               <div style="display:inline-block; width: 300px;">
+                  <p>Así sera tu cuarto</p>
+                  <div class="marco" id="marco13">
+                     <img width="100%" src="test/whoami_100001458999435.png"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="sixteen" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">ADIOS PANCITA,</p>
+               <p class="sub-title">BIENVENIDO BEBÉ</p>
+            </div>
+            <p>El día: <span>14 marzo 2014</span> comenzaron las contracciones.</p>
+            <p>¡Ay no, ay no, que nervios! mi labor de parto comenzó:</p>
+            <p><span>2</span> días antes de mi fecha programada</p>
+            <div class="row">
+               <div style="display:inline-block; width: 300px;">
+                  <p>Total de horas en labor de parto <span>33</span></p>
+               </div>
+               <div style="display:inline-block; width: 300px;">
+                  <p>Cuando comenzaron las contracciones yo estaba: <span>adfas</span></p>
+               </div>
+            </div>
+            <p>La experiencia completa de la labor de parto: <span>jhjk fhjkadshfjdksh fdjsfh jdshfdjsfh djskhf dsjk fhsdjkhfdsjkfh kdsjhfjsdkhfkjdshf dkjs hfjdskhfjdshfkds jhfkdjsfhkdsf sdk fds dsfds... . .fds.f dsfsd</span></p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="seventeen" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">ENTREGA ESPECIAL:</p>
+               <p class="sub-title">TÚ</p>
+            </div>
+            <div class="row">
+               <div class="marco" id="marco14">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>
+               </div>
+            </div>
+            <div class="row">
+               <div style="display:inline-block; width: 400px;">
+                  <p>Eres: <span>Sjsbansf skdasdbvav</span></p>
+                  <p>Naciste el día: <span>15 mayo 2014</span> a las <span>4:30pm</span></p>
+                  <p>Naciste en: <span>Ensenada</span></p>
+                  <p>Pesaste y mediste: <span>demasiado! !!!</span></p>
+                  <p>Tu cabello y tus ojos son: <span>COLOR POPO</span></p>
+               </div>
+               <div style="display:inline-block; width: 200px;">
+                  <p>El parto fue:</p>
+                  <p><input type="radio" name="data[SpecialdeliveryPage][itwas]" value="1" checked><label>Natural</label></p>
+                  <p><input type="radio" name="data[SpecialdeliveryPage][itwas]" value="2"><label>Epidural</label></p>
+                  <p><input type="radio" name="data[SpecialdeliveryPage][itwas]" value="3"><label>Cesárea</label></p>
+               </div>
+            </div>
+            <p class="big center">¡Apenas puedo creer que estabas en mi panza!</p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="eighteen" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">MÁS DETALLES</p>
+               <p class="sub-title">DE TU LLEGADA</p>
+            </div>
+            <p>Todo el mundo opina que te pareces a: <span>mi papa</span></p>
+            <p>El cordón umbilical lo cortó: <span>tu papa</span></p>
+            <p>Cuando te vi por primera vez sentí: <span>mudchas cosas dshfjkadhfas</span></p>
+            <p>Y cuando te pusieron en mis brazos, yo <span>te abrace! tan pque;ito que eres</span></p>
+            <p>Te fueron a conocer: <span>todo el mundoo nnadie que importe</span></p>
+            <p>Estuvimos en el hospital hasta el día <span>3ero</span></p>
+            <p>y la experiencia de la primera noche en casa es digna de contarse: <span>h fdjhfjdsk hfjdshf jdshjdsh fjsh jkdshfjkdh jskdh fjksdhf djs hfjkdshfkd sfhds cobijas.</span></p>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="nineteen" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">EPÍLOGO</p>
+               <p class="sub-title">DE LA PANZA</p>
+            </div>
+            <div class="row">
+               <p class="center">¡Ay! todavia parezco embarazada</p>
+               <p>Notas después de que llegaste y detalles que recordar:</p>
+               <p><span>:(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO :(:(:P(L POPOOOOO</span></p>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="twenty" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">LA NUEVA FAMILIA</p>
+               <p class="sub-title"></p>
+            </div>
+            <div class="row">
+               <div class="marco" id="marco15">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>
+               </div>
+               <p class="big">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+      <div id="" class="page">
+         <div class="header"></div>
+         <div class="container">
+            <div class="page-title">
+               <p class="title">ÁRBOL FAMILIAR</p>
+               <p class="sub-title"></p>
+            </div>
+            <div class="arbol">
+               <div class="row first">
+                  <span id="f1">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>          
+                  </span>
+                  <span id="f2">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>          
+                  </span>
+                  <span id="f3">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>          
+                  </span>
+                  <span id="f4">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>          
+                  </span>
+               </div>
+               <div class="row second">
+                  <span id="f5">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>          
+                  </span>
+                  <span id="f6">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>          
+                  </span>
+               </div>
+               <div class="row third">
+                  <span id="f7">
+                  <img width="100%" src="test/whoami_100001458999435.png"/>          
+                  </span>
+               </div>
+            </div>
+         </div>
+         <div class="footer"></div>
+      </div>
+   </body>
+</html>
